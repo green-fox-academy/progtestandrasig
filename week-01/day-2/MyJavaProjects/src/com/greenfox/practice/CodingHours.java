@@ -10,7 +10,6 @@ public class CodingHours {
         //
         // Írd ki, hogy a félév hány százalékát tölti a hallgató kódolással
         // ha az átlagos heti munkaidő 52 óra
-
         int numberOfWeeks = 17;
         int numberOfDaysPerWeek = 5;
 
