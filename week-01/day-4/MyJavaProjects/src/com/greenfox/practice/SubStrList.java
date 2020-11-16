@@ -8,7 +8,7 @@ public class SubStrList {
     public static void main(String[] args) {
         // Készíts egy függvényt, amely paraméterként egy Stringet és
         // egy List<String>-et(??) vár.
-        // A függvény térjen vissza a list azon idnexével, ahol a
+        // A függvény térjen vissza a list azon indexével, ahol a
         // listában szereplő String-nek a része a paraméterben megadott String.
         // Elég ha az elsőt megtalálja és azzal tér vissza.
         // Ha nem talál egyik elemében sem a listának térjen vissza -1 el.
