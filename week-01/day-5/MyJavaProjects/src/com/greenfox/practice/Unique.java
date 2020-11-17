@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Unique {
     public static void main(String[] args) {
-
         // - Készíts egy függvényt ami bemeneti paraméterként egy integer array-t vár.
         // - A függvény térjen vissza egy olyan listával ahol az összes szám csak egyszer fordul elő.
 
@@ -24,7 +23,6 @@ public class Unique {
             if (!list.contains(number))
                 list.add(number);
         }
-
         return list;
     }
 }
