@@ -20,7 +20,9 @@ public class ArmstrongNumber {
         System.out.println("Adj meg egy számot: ");
         int number = scanner.nextInt();
 
-        System.out.println(isAnArmstrongNumber(number));
+        boolean isArmstrong = isAnArmstrongNumber(number);
+
+        System.out.println("A(z) " + number + (!isArmstrong ? " nem " : " ") + "egy Armstrong szám.");
     }
 
     private static boolean isAnArmstrongNumber(int number) {
