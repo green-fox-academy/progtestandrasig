@@ -19,7 +19,6 @@ public class Sum {
         for (int i = 1; i <= maxNumber; i++) {
             summa += i;
         }
-
         return summa;
     }
 }
