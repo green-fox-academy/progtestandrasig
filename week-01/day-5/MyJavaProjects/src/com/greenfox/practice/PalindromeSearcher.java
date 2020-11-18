@@ -10,7 +10,7 @@ public class PalindromeSearcher {
 //        Mi is az a palindróma?
 //
 //        Gyakorlat
-//        Készíts egy searchPalindrome nevű függvényt, ami követi a jelenlegi nyelv stílus útmutatóját. Bemeneten fogad egy stringet. Majd kikeresi, hogy taláhatóak-e 3 karakternél hoszabb palindrómák benne és végül visszaküldi a talált palindrómák listáját.
+//        Készíts egy searchPalindrome nevű függvényt, ami követi a jelenlegi nyelv stílus útmutatóját. Bemeneten fogad egy stringet. Majd kikeresi, hogy taláhatóak-e 3 karakternél hosszabb palindrómák benne és végül visszaküldi a talált palindrómák listáját.
 //
 //        Példák:
 //        bemenet	                            kimenet
@@ -27,9 +27,6 @@ public class PalindromeSearcher {
 
     private static List<String> searchPalindrome(String text) {
 
-        //if (text.length() % 2 == 1)
-        //    return new ArrayList<>();
-
         if (text.length() < 3)
             return new ArrayList<>();
 
@@ -39,7 +36,6 @@ public class PalindromeSearcher {
         int maxLength = text.length();
 
         String subString;
-        ///boolean hasASubPalindrome = false;
 
         for (int i = length; i <= maxLength; i++) {
 
@@ -47,22 +43,11 @@ public class PalindromeSearcher {
 
                 subString = text.substring(j, j + length);
 
-                if (isASubPalindrome(subString)) {
+                if (isASubPalindrome(subString))
                     subPalindromes.add(subString);
-                    ///hasASubPalindrome = true;
-                }
-
-                /*if (j == text.length() - length) {
-                    //length++;
-                    ///hasASubPalindrome = false;
-                //}
-                ///else if (j < text.length() - length && hasASubPalindrome) {
-                    //hasASubPalindrome = false;
-                }*/
             }
 
             length++;
-            ///hasASubPalindrome = false;
         }
 
         return subPalindromes;
