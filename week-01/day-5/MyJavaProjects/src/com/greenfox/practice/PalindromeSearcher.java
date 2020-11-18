@@ -20,6 +20,7 @@ public class PalindromeSearcher {
 //        ""	                                []
 
         String text = "dog goat dad duck doodle never";
+        //String text = "racecar";
 
         System.out.println(searchPalindrome(text));
     }
@@ -35,33 +36,33 @@ public class PalindromeSearcher {
         List<String> subPalindromes = new ArrayList<>();
 
         int length = 3;
-        int maxLength = text.length() - 3;
+        int maxLength = text.length();
 
         String subString;
-        boolean hasASubPalindrome = false;
+        ///boolean hasASubPalindrome = false;
 
-        for (int i = length; i < text.length() - length; i++) {
+        for (int i = length; i <= maxLength; i++) {
 
-            for (int j = 0; j <= text.length() - length && !hasASubPalindrome; j++) {
+            for (int j = 0; j <= text.length() - length; j++) {
 
                 subString = text.substring(j, j + length);
 
                 if (isASubPalindrome(subString)) {
                     subPalindromes.add(subString);
-                    hasASubPalindrome = true;
+                    ///hasASubPalindrome = true;
                 }
 
-                if (j == text.length() - length) {
-                    length++;
-                    hasASubPalindrome = false;
-                }
-                else if (j < text.length() - length && hasASubPalindrome) {
-
-                    hasASubPalindrome = false;
-                }
+                /*if (j == text.length() - length) {
+                    //length++;
+                    ///hasASubPalindrome = false;
+                //}
+                ///else if (j < text.length() - length && hasASubPalindrome) {
+                    //hasASubPalindrome = false;
+                }*/
             }
 
-            hasASubPalindrome = false;
+            length++;
+            ///hasASubPalindrome = false;
         }
 
         return subPalindromes;
@@ -70,7 +71,6 @@ public class PalindromeSearcher {
     private static boolean isASubPalindrome(String subString) {
 
         boolean isAPalindrome = true;
-
         for (int i = 0; i < subString.length() / 2 && isAPalindrome; i++) {
 
             if (subString.charAt(i) != subString.charAt(subString.length() - 1 - i)) isAPalindrome = false;
