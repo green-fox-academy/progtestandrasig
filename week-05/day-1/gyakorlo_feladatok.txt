@@ -1,0 +1,52 @@
+TESZTELÉS - Gyakorló feladatok
+
+I. ÉLETCIKUS
+1. gyakorlat - Milyen problémát okozhat, hogy szekvenciális projektek végén van a tesztelés jelentõs része?
+A túl késõn kibukó, vagy esetleg túlzottan sok mûködési hiba, amit a késõi fázisban (közvetlenül átadás elõtt) végzett tesztelés mutat ki az adott projekt kész(nek gondolt!) forráskódjában, a határidõk csúszásához, a kódjavítások elhúzódásához vezethet. Akár olyan problémák is elõkerülhetnek, amik jóval szélesebb körû javítási munkát igényelnek, mert már "alapjaiban" sértik/veszélyeztetik a program helyes mûködését, és ezek a mélyebb problémák komolyabb javítási procedúrát igényelnek, ami adott esetben a projekt számára rendelkezésre álló idõt is meghaladja - vagyis a fejlesztõk megcsúsznak a programkód átadásával.
+Ennek elkerülésére, érdemes a projekt minél korábbi fázisában, vagyis már a kódolási folyamat megkezdésétõl végezni a tesztelést!
+
+2. gyakorlat - Jelöld meg, a 6 fõ fázisban mely szereplõk munkája kap legnagyobb szerepet!
+1. Követelmények feltárása és dokumentálása:
+Megrendelõ/ügyfél, IT üzleti elemzõ, tervezõ mérnök
+2. Tervezés:
+Tervezõ mérnök/architekt, GUI/frontend specialista
+3. Implementálás:
+Projektmenedzser, fejlesztõ, tesztelõ
+4. Tesztelés:
+Tesztelõ, tesztautomatizáló mérnök, teszt menedzser/teszt koordinátor
+5. Átadás:
+Megrendelõ, projektmenedzser, kulcs felhasználó, üzemeltetõ/rendszergazda
+6. Karbantartás:
+Felhasználók, kulcs felhasználó, fejlesztõ, üzemeltetõ, megrendelõ
+
+3. gyakorlat - EGYÜTTMÛKÖDÉS A TÖBBI SZEREPLÕVEL
+- Szoftvertesztelõk
+- Fejlesztõk
+- Projektmenedzser
+- Teszt menedzser
+- Felhasználók
+
+- Milyen fontosabb ellentétet, érdekütközést, ellenérdekeltséget vélsz felfedezni az egyes szereplõk között?
+Határidõk betartása/betartatása...?
+- Mik a közös célok, amikben mindenki érdekelt?
+A jó minõségû, megbízható termék elõállítása.
+
+4. gyakorlat - ELLENTMONDÁS FELOLDÁSA
+...ki lehet, aki segít eldönteni a kérdést?
+Projektmenedzser, megrendelõ(?)  ( IT üzleti elemzõ )
+
+5. gyakorlat - TESZTELÕK TERHELÉSE
+A követelmények meghatározása után, valamikor a tervezési fázisban megkeresi azokat a lehetséges szempontokat, amik az adott szoftver késõbbi tesztelésénél szerepet játszhatnak - vagyis elõre "megtervezi" a teszteseteket...?
+6. gyakorlat - MI TÖRTÉNIK, AMIKOR HIBÁT TALÁLUNK?
+Az ügyfélben ilyenkor csalódás/elbizonytalanodás érzése merülhet fel, hogy esetleg nem a megfelelõ fejlesztõcsapatot bízta meg, vagy hogy nem lesz készen határidõre a projekt, illetve nem lesz megbízható/megfelelõ minõségû az elkészült szoftver
+A projektmenedzserben lehet félelem azzal kapcsolatban, hogy a fejlesztõknek nem adta meg kellõ pontossággal az implementálandó feladatokat, vagy hogy a fejlesztõk azt nem tudták megfelelõen értelmezni/lekódolni/kivitelezni
+A fejlesztõben, hogy valamiért nem végezte jól/kellõ körültekintéssel a kódolást...
+
+7. gyakorlat - PROBLÉMA KOMMUNIKÁLÁSA
+"Tisztelt Projektmenedzser, kedves fejlesztõk!
+A szoftvernek a napokon belüli, éles üzemre történõ átadása miatt írok. Mivel sajnos egy korábban már javított hibát újra sikerült elõidéznem a programban. A hibajelenség a következõ:
+A rendszer 10 percnyi folyamatos használat után, hibaüzenet kíséretében leáll. Ezután csak a böngészési elõzmények teljes törlésével tudtam újra használni a programot.
+Kérném szépen az érintett fejlesztõket, hogy - ha lehetséges, még az átadás elõtt - próbálják meg kijavítani az említett hibát, hogy a felhasználókhoz már hibamentesen kerülhessen az alkalmazás!
+üdvözlettel:..."
+
+8. gyakorlat - 

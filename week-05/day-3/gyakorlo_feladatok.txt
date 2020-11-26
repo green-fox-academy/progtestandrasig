@@ -1,0 +1,80 @@
+TESZTELÉS - Gyakorló feladatok
+
+III. MINÕSÉG
+1. gyakorlat - MINÕSÉG
+Minõségi szempontok egy autónál: alacsony fogyasztás, kényelmes ülések/utastér, jó "útfekvésû" / biztonságos vezetni, egyéb kényelmi funkciók (pl. fedélzeti GPS, önvezetõ funkciók, rádió/tv/médialejátszó a hátsó ülésen utazóknak is, stb.), nagy csomagtér, megfelelõ klímaberendezés, stb.
+Minõségi szempontok egy lakásnál: legalább összkomfortos szintû, a lakás és a helységei jó elrendezésûek, a falak és nyílászárók legyenek jól szigeteltek (vagyis legyen környezetbarát!), legalább két hálószoba (esetleg 1 nagy nappali + 1 háló), tágas konyha külön étkezõvel, megfelelõen kialakított fürdõszoba, különálló tárolóhelység esetleg spájz, beépített szekrények, keleti/dél-keleti fekvés, nyugodt-csöndes környezet / biztonságos környék, stb.
+
+2. gyakorlat - SZOFTVER MINÕSÉG
+Szoftverekkel kapcsolatos minõségi követelmények: felhasználóbarát kialakítás, könnyû használat, gyors/akadásmentes futás, adatok biztonsága, support támogatás, kompatibilitás/multi-platform, rendszeres frissítések (pl. biztonsági frissítések), stb.
+Jó szoftverek: Mozilla Firefox (biztonságos, népszerû böngészõ, gyakori frissítés), Total Commander (jól használható fájlkezelõ alkalmazás, sokféle funkcióval), XnView (sok extra funkciót tartalmaz, képek böngészése és kezelése egyszerûen), Visual Studio és Visual Studio Code (sokféle programnyelvet támogató, könnyen tanulható és népszerû IDE-k, felhasználóbarát funkciókkal és kialakítással), ADOBE Acrobat Reader (egyik legelterjedtebb PDF-olvasó szoftver, könnyû használat)
+Rossz szoftverek: Internet Explorer (elavult, már nem támogatott, nem biztonságos), Windows PaintBrush (egyszerû képszerkesztõ viszonylag kevés funkcióval), ...
+
+3. gyakorlat - MINÕSÉG KATEGÓRIÁK
+1. Teljesítmény hatékonyság
+2. Funkcionális alkalmasság
+3. Biztonság
+4. Funkcionális alkalmasság / Megbízhatóság / Használhatóság(?)
+5. Megbízhatóság
+6. Kompatibilitás
+7. Funkcionális alkalmasság / Megbízhatóság
+8. Funkcionális alkalmasság / Kompatibilitás(?)
+9. Biztonság
+
+4. gyakorlat - MINÕSÉGJELLEMZÕKKEL KAPCSOLATOS KÖVETELMÉNYEK
+1. Funkcionális alkalmasság:
+- Az Áruházkeresõben tudni kell csak irányítószám alapján is kilistázni a közeli boltokat
+- Az oldal tetején/felsõ részében a legfrissebb ajánlatokat egy mozgó "slideshow" mutassa
+- Az akciós termékeket bemutató blokkban egy sárga háttérrel kiemelten jelenjen meg az adott akció mértékére/feltételére vonatkozó információ (kedvezmény százalékosan, minimális darabszám alapján, stb.)
+2. Teljesítmény hatékonyság:
+- A webszervernek egyszerre, egy idõpontban legalább 1000 felhasználótól érkezõ kérést kell tudnia kiszolgálni anélkül, hogy az alkalmazás lefagyna, vagy belassulna.
+- 
+- 
+
+3. Használhatóság:
+- Az oldal navigációs menüjének jól láthatónak kell lennie, hogy a vásárlók könnyen megtalálják az oldalon, amit éppen keresnek.
+- Az aktuális akciós katalógust az oldal közepére, egy jól észrevehetõ helyre kell tenni.
+- Az oldalnak a megjelenését a különbözõ méretû mobil eszközökre is fel kell készíteni, tehát fontos a reszponzivitás.
+- A vásárló ne tudjon a lehetséges legkisebb mennyiségnél kevesebbet (pl. 0 darabot) a kosarába tenni egy termékbõl - vagy a megrendelendõ terméknek a darabszámát 0-ra állítani késõbb a kosár/megrendelés oldalon
+4. Kompatibilitás:
+- A manapság leggyakoribb böngészõknek (pl. Chrome, Firefox, Safari, Edge) a legfrissebb verzióiban egyaránt ugyanúgy kell mûködnie, és megjelennie a webshopnak
+- A katalógus egyes oldalai külön-külön legyenek nyomtathatóak és ez a nyomtatási lehetõség többféle operációs-rendszerben, vagyis különbözõ HW/SW környezetben is jól funkcionáljon
+- 
+
+5. Megbízhatóság:
+- Az oldal havonta legfeljebb 6 óra idõtartamra állhat le (pl. szükséges karbantartások, frissítések, stb.)
+- A jóváhagyott/elindított megrendelések kevesebb, mint 0,1%-a lehet csak sikertelen tranzakció, vagyis amikor bármely technika hibából kifolyólag meghiúsul a fizetés
+- 
+
+6. Biztonság:
+- A vásárlói megrendeléseket biztonságos HTTPS-kapcsolaton keresztül kell kiszolgálni, hogy illetéktelenek ne juthassanak hozzá az ügyfél személyes vagy pénzügyi adataihoz
+- A megrendelések és a vásárlók különbözõ adatait titkosítva kell eltárolni az adatbázisban
+- 
+
+7. Karbantarthatóság:
+- Szükséges egy olyan különálló adminisztrációs felület, ahol a Tesco alkalmazottai is képesek egyszerûen aktualizálni a terméklistát illetve a katalógusokat, szakmai/informatikai ismeretektõl függetlenül, tehát bármiféle programozói tapasztalat nélkül is.
+- 
+-  
+8. Hordozhatóság:
+- 
+- 
+- A termékek és vásárlók adatbázisát úgy kell kialakítani, hogy az képes legyen futni többféle adatbázis-gyártó esetében is.
+
+
+
+5. gyakorlat - RESZPONZÍV TERVEZÉS
+Reszponzív oldalak:  facebook.com, twitter.com, 444.hu
+Nem reszponzív oldalak: kormanyablak.hu, munka.org, bugyi.hu
+6. gyakorlat - KONZISZTENS STÍLUSÚ WEBOLDAL
+Jó példák: greenpeace.com, telex.hu, stackowerflow.com
+Rossz példák: ...
+Példa - JÓ ÉS ROSSZ FELHASZNÁLÓI INTERFACE (USER INTERFACE - UI):
+Melyik minõségi kategória jelenik itt meg?
+Használhatóság  (+ Kompatibilitás?)
+
+7. gyakorlat - MINÕSÉGJELLEMZÕK
+Microsoft Word: funkcionális alkalmasság, használhatóság, megbízhatóság/biztonság
+Angry Birds: teljesítmény-hatékonyság, használhatóság, kompatibilitás
+Ubuntu Linux: biztonság, megbízhatóság, karbantarthatóság
+Gmail: funkcionális alkalmasság, használhatóság, kompatibilitás, biztonság
+
